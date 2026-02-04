@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Featured Blog Section</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Blog Section */
+        .blog-section {
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+        .blog-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .blog-post {
+            background-color: #fafafa;
+            padding: 15px;
+            width: 33%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .blog-post h3 {
+            margin-top: 0;
+        }
+
+        /* Images ending with .jpg */
+        img[src$=".jpg"] {
+            width: 100%;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+
+        /* Highlight only https links */
+        a[href^="https"] {
+            color: red;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Small screens */
+        @media (max-width: 600px) {
+            .blog-container {
+                flex-direction: column;
+            }
+
+            .blog-post {
+                width: 100%;
+            }
+
+            .blog-post h3 {
+                font-size: 18px;
+            }
+
+            .blog-post p {
+                font-size: 14px;
+            }
+        }
+
+        /* Portrait orientation */
+        @media (orientation: portrait) {
+            .blog-section {
+                background-color: lightyellow;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section class="blog-section">
+    <h2>Featured Blogs</h2>
+
+    <div class="blog-container">
+        <div class="blog-post">
+            <h3>Web Design Basics</h3>
+            <img src="design.jpg" alt="Web Design">
+            <p>Learn the fundamentals of modern web design.</p>
+            <a href="https://example.com/design">Read More</a>
+        </div>
+
+        <div class="blog-post">
+            <h3>CSS Tips & Tricks</h3>
+            <img src="css.jpg" alt="CSS Tips">
+            <p>Improve your layouts with simple CSS techniques.</p>
+            <a href="http://example.com/css">Read More</a>
+        </div>
+
+        <div class="blog-post">
+            <h3>Responsive Design</h3>
+            <img src="responsive.jpg" alt="Responsive Design">
+            <p>Make your websites look great on all devices.</p>
+            <a href="https://example.com/responsive">Read More</a>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
