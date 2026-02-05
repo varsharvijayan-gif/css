@@ -5,15 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        
         .firstcontainer{
             width: 500px;
             height: 400px;
-            border: 2px solid grey;
+            border: 2px solid rgb(31, 30, 30);
         }img{
+            margin: auto;
             width: 450px;
             height: 300px;
         }
-        
+        .secondcontainer{
+            
+            width: 500px;
+            height: 400px;
+            border: 2px solid rgb(29, 29, 29);
+        }
+        .thirdcontainer{
+            width: 500px;
+            height: 400px;
+            border: 2px solid rgb(17, 16, 16);
+        }
+        a[href^="https"]{
+            color: red;
+
+        }
+        img[src$=".jpg"]{
+            border-radius: 0,15px,0,15px;
+        }
     </style>
 </head>
 <body>
@@ -21,8 +40,17 @@
     <div class="firstcontainer">
         <h3>Heading1</h3>
         <img src="iphone.jpg" alt="iphone image"><br>
-        <a href="#">Read more</a>
-
+       <p>Latest News:<a href="#">Read more</a></p> 
+    </div>
+    <div class="secondcontainer">
+        <h3>Heading2</h3>
+        <img src="profile.jpg" alt=""><br>
+       <p>Latest News: <a href="https://www.msn.com/en-in/sports/cricket/sanju-samson-s-fate-sealed-job-s-not-finished-with-t20-world-cup-2026-in-sight/ar-AA1VGm5Y?uxmode=ruby&ocid=edgntpruby&pc=ASTS&cvid=69842f87ab5446e89a3b523ce3abfd41&ei=26">Read more</a></p>
+        </div>
+    <div class="thirdcontainer">
+        <h3>Heading4</h3>
+        <img src="elonmusk.jpeg" alt="">
+       <p> Latest News:<a href="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1SII42.img?w=1012&h=569&m=6&x=481&y=182&s=208&d=208">Read more</a></p>
     </div>
 
 </body>
